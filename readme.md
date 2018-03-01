@@ -35,6 +35,8 @@ browser = Watir::Browser.new :chrome, proxy: proxy_hash
 
 This method is compatible with `:chrome`, `:firefox`, and remote versions using `url: URL` when setting up a `Watir::Browser`.
 
+Unfortunately, I don't know how to get a proxy working with Edge. None of the example test variations have worked.
+
 # Some interesting things regarding my `interesting_tests`:
 
 #### Leave `http://` at home:
@@ -58,6 +60,8 @@ There are many examples and documentation for using a proxy with Chrome via the 
   - [ChromeDriver to automate Chrome](https://sites.google.com/a/chromium.org/chromedriver/)
   - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
   - [geckodriver to automate Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver)
+  - [Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)
+  - [MicrosoftWebDriver to automate Edge](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
   - Any other browsers, and automation drivers that you wish to add!
 
 ### Fire ze missiles

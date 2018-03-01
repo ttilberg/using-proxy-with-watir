@@ -1,15 +1,60 @@
-Run options: --verbose --seed 39190
+Run options: --verbose --seed 37706
 
 # Running:
 
-ChromeTest#test_using_proxy_object_from_uri_with_http_scheme = 3.90 s = .
-ChromeTest#test_using_proxy_object = 3.76 s = .
-ChromeTest#test_using_proxy_object_from_uri_without_http_scheme = 3.77 s = .
-ChromeTest#test_using_proxy_params_hash = 3.74 s = .
-ChromeTest#test_using_switches_argument_with_http_scheme = 3.72 s = .
-ChromeTest#test_using_switches_argument = 3.72 s = .
-ChromeTest#test_using_params_hash_with_http_scheme = 3.76 s = .
-RemoteChromeTest#test_using_proxy_object_from_uri_without_http_scheme = 2.01 s = .
+ChromeTest#test_using_proxy_object_from_uri_with_http_scheme = 3.83 s = .
+ChromeTest#test_using_switches_argument_with_http_scheme = 3.71 s = .
+ChromeTest#test_using_proxy_params_hash = 3.71 s = .
+ChromeTest#test_using_proxy_object = 3.74 s = .
+ChromeTest#test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy = 0.00 s = E
+
+
+Error:
+ChromeTest#test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy:
+ArgumentError: unknown options: [:httpProxy, :sslProxy]
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/proxy.rb:67:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:212:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:212:in `proxy='
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:184:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:70:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:70:in `chrome'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:117:in `process_capabilities'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:38:in `process_arguments'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:22:in `to_args'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:47:in `initialize'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:51:in `test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy'
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:45
+
+ChromeTest#test_using_params_hash_with_http_scheme = 3.70 s = .
+ChromeTest#test_using_switches_argument = 3.67 s = .
+ChromeTest#test_using_proxy_object_from_uri_without_http_scheme = 3.78 s = .
+RemoteChromeTest#test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy = 0.00 s = E
+
+
+Error:
+RemoteChromeTest#test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy:
+ArgumentError: unknown options: [:httpProxy, :sslProxy]
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/proxy.rb:67:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:212:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:212:in `proxy='
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:184:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:70:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:70:in `chrome'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:117:in `process_capabilities'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:38:in `process_arguments'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:22:in `to_args'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:47:in `initialize'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:51:in `test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy'
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:45
+
+RemoteChromeTest#test_using_proxy_object_from_uri_with_http_scheme = 2.03 s = .
+RemoteChromeTest#test_using_proxy_object_from_uri_without_http_scheme = 1.94 s = .
 RemoteChromeTest#test_using_switches_argument = 0.93 s = F
 
 
@@ -17,82 +62,106 @@ Failure:
 RemoteChromeTest#test_using_switches_argument [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
 Proxy did not change for HTTP connection
 
-bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:108
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:120
 
-RemoteChromeTest#test_using_proxy_object_from_uri_with_http_scheme = 1.97 s = .
-RemoteChromeTest#test_using_switches_argument_with_http_scheme = 0.83 s = F
+RemoteChromeTest#test_using_proxy_object = 1.90 s = .
+RemoteChromeTest#test_using_params_hash_with_http_scheme = 1.99 s = .
+RemoteChromeTest#test_using_switches_argument_with_http_scheme = 0.88 s = F
 
 
 Failure:
 RemoteChromeTest#test_using_switches_argument_with_http_scheme [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
 Proxy did not change for HTTP connection
 
-bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:117
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:129
 
-RemoteChromeTest#test_using_params_hash_with_http_scheme = 1.93 s = .
-RemoteChromeTest#test_using_proxy_params_hash = 1.86 s = .
-RemoteChromeTest#test_using_proxy_object = 1.93 s = .
-FirefoxTest#test_using_switches_argument_with_http_scheme = 3.28 s = F
+RemoteChromeTest#test_using_proxy_params_hash = 1.95 s = .
+EdgeTest#test_using_proxy_object = 3.69 s = F
 
 
 Failure:
-FirefoxTest#test_using_switches_argument_with_http_scheme [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+EdgeTest#test_using_proxy_object [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
 Proxy did not change for HTTP connection
 
-bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:117
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:76
 
-FirefoxTest#test_using_params_hash_with_http_scheme = 0.63 s = E
+EdgeTest#test_using_proxy_object_from_uri_without_http_scheme = 3.61 s = F
+
+
+Failure:
+EdgeTest#test_using_proxy_object_from_uri_without_http_scheme [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:106
+
+EdgeTest#test_using_params_hash_with_http_scheme = 3.63 s = F
+
+
+Failure:
+EdgeTest#test_using_params_hash_with_http_scheme [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:63
+
+EdgeTest#test_using_switches_argument = 3.62 s = F
+
+
+Failure:
+EdgeTest#test_using_switches_argument [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:120
+
+EdgeTest#test_using_proxy_object_from_uri_with_http_scheme = 3.59 s = F
+
+
+Failure:
+EdgeTest#test_using_proxy_object_from_uri_with_http_scheme [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:91
+
+EdgeTest#test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy = 0.00 s = E
 
 
 Error:
-FirefoxTest#test_using_params_hash_with_http_scheme:
-Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 contains a scheme
-    stack backtrace:
-       0:           0x47e934 - <no info>
-       1:           0x47f0a3 - <no info>
-       2:           0x476b0a - <no info>
-       3:           0x4692f2 - <no info>
-       4:           0x468951 - <no info>
-       5:           0x438604 - <no info>
-       6:           0x4430c6 - <no info>
-       7:           0x42a890 - <no info>
-       8:           0x406f5e - <no info>
-       9:           0x40cfc9 - <no info>
-      10:           0x6bef19 - <no info>
-      11:           0x420756 - <no info>
-      12:           0x6b96e0 - <no info>
-      13:     0x7ff919c71fe4 - BaseThreadInitThunk
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `new'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `create_response'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/default.rb:104:in `request'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:164:in `execute'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:97:in `create_session'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/marionette/driver.rb:50:in `initialize'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/driver.rb:31:in `new'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/driver.rb:31:in `new'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/driver.rb:52:in `for'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver.rb:84:in `for'
-    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
+EdgeTest#test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy:
+ArgumentError: unknown options: [:httpProxy, :sslProxy]
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/proxy.rb:67:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:212:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:212:in `proxy='
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:184:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:78:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:78:in `edge'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:117:in `process_capabilities'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:38:in `process_arguments'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:22:in `to_args'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:47:in `initialize'
     C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
     C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
-    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:57:in `test_using_params_hash_with_http_scheme'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:51:in `test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy'
 
-bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:51
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:45
 
-FirefoxTest#test_using_proxy_params_hash = 4.09 s = .
-FirefoxTest#test_using_switches_argument = 3.08 s = F
+EdgeTest#test_using_switches_argument_with_http_scheme = 3.61 s = F
 
 
 Failure:
-FirefoxTest#test_using_switches_argument [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+EdgeTest#test_using_switches_argument_with_http_scheme [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
 Proxy did not change for HTTP connection
 
-bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:108
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:129
 
-FirefoxTest#test_using_proxy_object_from_uri_without_http_scheme = 0.62 s = E
+EdgeTest#test_using_proxy_params_hash = 3.58 s = F
+
+
+Failure:
+EdgeTest#test_using_proxy_params_hash [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:33
+
+FirefoxTest#test_using_proxy_object_from_uri_without_http_scheme = 0.75 s = E
 
 
 Error:
@@ -129,12 +198,11 @@ Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 co
     C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
     C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
     C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
-    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:100:in `test_using_proxy_object_from_uri_without_http_scheme'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:112:in `test_using_proxy_object_from_uri_without_http_scheme'
 
-bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:94
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:106
 
-FirefoxTest#test_using_proxy_object = 4.12 s = .
-FirefoxTest#test_using_proxy_object_from_uri_with_http_scheme = 0.62 s = E
+FirefoxTest#test_using_proxy_object_from_uri_with_http_scheme = 0.63 s = E
 
 
 Error:
@@ -171,9 +239,114 @@ Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 co
     C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
     C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
     C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
-    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:85:in `test_using_proxy_object_from_uri_with_http_scheme'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:97:in `test_using_proxy_object_from_uri_with_http_scheme'
 
-bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:79
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:91
+
+FirefoxTest#test_using_proxy_object = 4.11 s = .
+FirefoxTest#test_using_proxy_params_hash = 4.00 s = .
+FirefoxTest#test_using_params_hash_with_http_scheme = 0.62 s = E
+
+
+Error:
+FirefoxTest#test_using_params_hash_with_http_scheme:
+Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 contains a scheme
+    stack backtrace:
+       0:           0x47e934 - <no info>
+       1:           0x47f0a3 - <no info>
+       2:           0x476b0a - <no info>
+       3:           0x4692f2 - <no info>
+       4:           0x468951 - <no info>
+       5:           0x438604 - <no info>
+       6:           0x4430c6 - <no info>
+       7:           0x42a890 - <no info>
+       8:           0x406f5e - <no info>
+       9:           0x40cfc9 - <no info>
+      10:           0x6bef19 - <no info>
+      11:           0x420756 - <no info>
+      12:           0x6b96e0 - <no info>
+      13:     0x7ff919c71fe4 - BaseThreadInitThunk
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `create_response'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/default.rb:104:in `request'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:164:in `execute'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:97:in `create_session'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/marionette/driver.rb:50:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/driver.rb:31:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/driver.rb:31:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/driver.rb:52:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver.rb:84:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:69:in `test_using_params_hash_with_http_scheme'
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:63
+
+FirefoxTest#test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy = 0.00 s = E
+
+
+Error:
+FirefoxTest#test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy:
+ArgumentError: unknown options: [:httpProxy, :sslProxy]
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/proxy.rb:67:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:212:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:212:in `proxy='
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:184:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:88:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:88:in `firefox'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:117:in `process_capabilities'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:38:in `process_arguments'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:22:in `to_args'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:47:in `initialize'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:51:in `test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy'
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:45
+
+FirefoxTest#test_using_switches_argument_with_http_scheme = 3.12 s = F
+
+
+Failure:
+FirefoxTest#test_using_switches_argument_with_http_scheme [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:129
+
+FirefoxTest#test_using_switches_argument = 3.11 s = F
+
+
+Failure:
+FirefoxTest#test_using_switches_argument [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:120
+
+RemoteFirefoxTest#test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy = 0.00 s = E
+
+
+Error:
+RemoteFirefoxTest#test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy:
+ArgumentError: unknown options: [:httpProxy, :sslProxy]
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/proxy.rb:67:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:212:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:212:in `proxy='
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:184:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:88:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/capabilities.rb:88:in `firefox'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:117:in `process_capabilities'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:38:in `process_arguments'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/capabilities.rb:22:in `to_args'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:47:in `initialize'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:51:in `test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy'
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:45
 
 RemoteFirefoxTest#test_using_params_hash_with_http_scheme = 0.15 s = E
 
@@ -182,7 +355,7 @@ Error:
 RemoteFirefoxTest#test_using_params_hash_with_http_scheme:
 Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 contains a scheme
 Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:42:28.403Z'
-System info: host: '60d726f508f2', ip: '***.***.***.***', os.name: 'Linux', os.arch: 'amd64', os.version: '4.9.60-linuxkit-aufs', java.version: '1.8.0_151'
+System info: host: '6229b4c33c2b', ip: '***.***.***.***', os.name: 'Linux', os.arch: 'amd64', os.version: '4.9.60-linuxkit-aufs', java.version: '1.8.0_151'
 Driver info: driver.version: unknown
 remote stacktrace: stack backtrace:
    0:           0x4edb3c - backtrace::backtrace::trace::hc4bd56a2f176de7e
@@ -289,18 +462,18 @@ remote stacktrace: stack backtrace:
     C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
     C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
     C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
-    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:57:in `test_using_params_hash_with_http_scheme'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:69:in `test_using_params_hash_with_http_scheme'
 
-bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:51
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:63
 
-RemoteFirefoxTest#test_using_proxy_object_from_uri_with_http_scheme = 0.13 s = E
+RemoteFirefoxTest#test_using_proxy_object_from_uri_with_http_scheme = 0.15 s = E
 
 
 Error:
 RemoteFirefoxTest#test_using_proxy_object_from_uri_with_http_scheme:
 Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 contains a scheme
 Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:42:28.403Z'
-System info: host: '60d726f508f2', ip: '***.***.***.***', os.name: 'Linux', os.arch: 'amd64', os.version: '4.9.60-linuxkit-aufs', java.version: '1.8.0_151'
+System info: host: '6229b4c33c2b', ip: '***.***.***.***', os.name: 'Linux', os.arch: 'amd64', os.version: '4.9.60-linuxkit-aufs', java.version: '1.8.0_151'
 Driver info: driver.version: unknown
 remote stacktrace: stack backtrace:
    0:           0x4edb3c - backtrace::backtrace::trace::hc4bd56a2f176de7e
@@ -407,28 +580,18 @@ remote stacktrace: stack backtrace:
     C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
     C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
     C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
-    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:85:in `test_using_proxy_object_from_uri_with_http_scheme'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:97:in `test_using_proxy_object_from_uri_with_http_scheme'
 
-bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:79
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:91
 
-RemoteFirefoxTest#test_using_proxy_params_hash = 3.78 s = .
-RemoteFirefoxTest#test_using_switches_argument = 2.34 s = F
-
-
-Failure:
-RemoteFirefoxTest#test_using_switches_argument [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
-Proxy did not change for HTTP connection
-
-bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:108
-
-RemoteFirefoxTest#test_using_proxy_object_from_uri_without_http_scheme = 0.12 s = E
+RemoteFirefoxTest#test_using_proxy_object_from_uri_without_http_scheme = 0.15 s = E
 
 
 Error:
 RemoteFirefoxTest#test_using_proxy_object_from_uri_without_http_scheme:
 Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 contains a scheme
 Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:42:28.403Z'
-System info: host: '60d726f508f2', ip: '***.***.***.***', os.name: 'Linux', os.arch: 'amd64', os.version: '4.9.60-linuxkit-aufs', java.version: '1.8.0_151'
+System info: host: '6229b4c33c2b', ip: '***.***.***.***', os.name: 'Linux', os.arch: 'amd64', os.version: '4.9.60-linuxkit-aufs', java.version: '1.8.0_151'
 Driver info: driver.version: unknown
 remote stacktrace: stack backtrace:
    0:           0x4edb3c - backtrace::backtrace::trace::hc4bd56a2f176de7e
@@ -535,21 +698,31 @@ remote stacktrace: stack backtrace:
     C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
     C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
     C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
-    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:100:in `test_using_proxy_object_from_uri_without_http_scheme'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:112:in `test_using_proxy_object_from_uri_without_http_scheme'
 
-bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:94
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:106
 
-RemoteFirefoxTest#test_using_switches_argument_with_http_scheme = 2.34 s = F
+RemoteFirefoxTest#test_using_proxy_object = 3.40 s = .
+RemoteFirefoxTest#test_using_switches_argument = 2.27 s = F
+
+
+Failure:
+RemoteFirefoxTest#test_using_switches_argument [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:120
+
+RemoteFirefoxTest#test_using_proxy_params_hash = 3.29 s = .
+RemoteFirefoxTest#test_using_switches_argument_with_http_scheme = 2.45 s = F
 
 
 Failure:
 RemoteFirefoxTest#test_using_switches_argument_with_http_scheme [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
 Proxy did not change for HTTP connection
 
-bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:117
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:129
 
-RemoteFirefoxTest#test_using_proxy_object = 4.62 s = .
 
-Finished in 67.760699s, 0.4132 runs/s, 0.5608 assertions/s.
+Finished in 91.266749s, 0.4383 runs/s, 0.4931 assertions/s.
 
-28 runs, 38 assertions, 6 failures, 6 errors, 0 skips
+40 runs, 45 assertions, 13 failures, 11 errors, 0 skips

@@ -22,6 +22,18 @@ class ChromeTest < Minitest::Test
   end
 end
 
+class EdgeTest < Minitest::Test
+  include InterestingTests
+
+  def browser_type
+    :edge
+  end
+
+  def default_options
+    {}
+  end
+end
+
 class FirefoxTest < Minitest::Test
   include InterestingTests
 

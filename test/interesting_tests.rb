@@ -40,6 +40,20 @@ module InterestingTests
   end
 
   ##
+  # This is an alternate format that I've seen around.
+  #
+  # It doesn't seem to work for any of the browsers.
+  #
+  def test_using_proxy_params_hash_with_longer_names_httpproxy_sslproxy
+    proxy = {
+      httpProxy: PROXY,
+      sslProxy:  PROXY
+    }
+
+    run_test_with proxy: proxy
+  end  
+
+  ##
   # Some proxy tools require "http://" to be preceeded and some do not.
   # Which is this?
   #
