@@ -1,0 +1,555 @@
+Run options: --verbose --seed 39190
+
+# Running:
+
+ChromeTest#test_using_proxy_object_from_uri_with_http_scheme = 3.90 s = .
+ChromeTest#test_using_proxy_object = 3.76 s = .
+ChromeTest#test_using_proxy_object_from_uri_without_http_scheme = 3.77 s = .
+ChromeTest#test_using_proxy_params_hash = 3.74 s = .
+ChromeTest#test_using_switches_argument_with_http_scheme = 3.72 s = .
+ChromeTest#test_using_switches_argument = 3.72 s = .
+ChromeTest#test_using_params_hash_with_http_scheme = 3.76 s = .
+RemoteChromeTest#test_using_proxy_object_from_uri_without_http_scheme = 2.01 s = .
+RemoteChromeTest#test_using_switches_argument = 0.93 s = F
+
+
+Failure:
+RemoteChromeTest#test_using_switches_argument [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:108
+
+RemoteChromeTest#test_using_proxy_object_from_uri_with_http_scheme = 1.97 s = .
+RemoteChromeTest#test_using_switches_argument_with_http_scheme = 0.83 s = F
+
+
+Failure:
+RemoteChromeTest#test_using_switches_argument_with_http_scheme [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:117
+
+RemoteChromeTest#test_using_params_hash_with_http_scheme = 1.93 s = .
+RemoteChromeTest#test_using_proxy_params_hash = 1.86 s = .
+RemoteChromeTest#test_using_proxy_object = 1.93 s = .
+FirefoxTest#test_using_switches_argument_with_http_scheme = 3.28 s = F
+
+
+Failure:
+FirefoxTest#test_using_switches_argument_with_http_scheme [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:117
+
+FirefoxTest#test_using_params_hash_with_http_scheme = 0.63 s = E
+
+
+Error:
+FirefoxTest#test_using_params_hash_with_http_scheme:
+Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 contains a scheme
+    stack backtrace:
+       0:           0x47e934 - <no info>
+       1:           0x47f0a3 - <no info>
+       2:           0x476b0a - <no info>
+       3:           0x4692f2 - <no info>
+       4:           0x468951 - <no info>
+       5:           0x438604 - <no info>
+       6:           0x4430c6 - <no info>
+       7:           0x42a890 - <no info>
+       8:           0x406f5e - <no info>
+       9:           0x40cfc9 - <no info>
+      10:           0x6bef19 - <no info>
+      11:           0x420756 - <no info>
+      12:           0x6b96e0 - <no info>
+      13:     0x7ff919c71fe4 - BaseThreadInitThunk
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `create_response'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/default.rb:104:in `request'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:164:in `execute'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:97:in `create_session'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/marionette/driver.rb:50:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/driver.rb:31:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/driver.rb:31:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/driver.rb:52:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver.rb:84:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:57:in `test_using_params_hash_with_http_scheme'
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:51
+
+FirefoxTest#test_using_proxy_params_hash = 4.09 s = .
+FirefoxTest#test_using_switches_argument = 3.08 s = F
+
+
+Failure:
+FirefoxTest#test_using_switches_argument [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:108
+
+FirefoxTest#test_using_proxy_object_from_uri_without_http_scheme = 0.62 s = E
+
+
+Error:
+FirefoxTest#test_using_proxy_object_from_uri_without_http_scheme:
+Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 contains a scheme
+    stack backtrace:
+       0:           0x47e934 - <no info>
+       1:           0x47f0a3 - <no info>
+       2:           0x476b0a - <no info>
+       3:           0x4692f2 - <no info>
+       4:           0x468951 - <no info>
+       5:           0x438604 - <no info>
+       6:           0x4430c6 - <no info>
+       7:           0x42a890 - <no info>
+       8:           0x406f5e - <no info>
+       9:           0x40cfc9 - <no info>
+      10:           0x6bef19 - <no info>
+      11:           0x420756 - <no info>
+      12:           0x6b96e0 - <no info>
+      13:     0x7ff919c71fe4 - BaseThreadInitThunk
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `create_response'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/default.rb:104:in `request'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:164:in `execute'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:97:in `create_session'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/marionette/driver.rb:50:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/driver.rb:31:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/driver.rb:31:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/driver.rb:52:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver.rb:84:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:100:in `test_using_proxy_object_from_uri_without_http_scheme'
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:94
+
+FirefoxTest#test_using_proxy_object = 4.12 s = .
+FirefoxTest#test_using_proxy_object_from_uri_with_http_scheme = 0.62 s = E
+
+
+Error:
+FirefoxTest#test_using_proxy_object_from_uri_with_http_scheme:
+Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 contains a scheme
+    stack backtrace:
+       0:           0x47e934 - <no info>
+       1:           0x47f0a3 - <no info>
+       2:           0x476b0a - <no info>
+       3:           0x4692f2 - <no info>
+       4:           0x468951 - <no info>
+       5:           0x438604 - <no info>
+       6:           0x4430c6 - <no info>
+       7:           0x42a890 - <no info>
+       8:           0x406f5e - <no info>
+       9:           0x40cfc9 - <no info>
+      10:           0x6bef19 - <no info>
+      11:           0x420756 - <no info>
+      12:           0x6b96e0 - <no info>
+      13:     0x7ff919c71fe4 - BaseThreadInitThunk
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `create_response'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/default.rb:104:in `request'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:164:in `execute'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:97:in `create_session'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/marionette/driver.rb:50:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/driver.rb:31:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/firefox/driver.rb:31:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/driver.rb:52:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver.rb:84:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:85:in `test_using_proxy_object_from_uri_with_http_scheme'
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:79
+
+RemoteFirefoxTest#test_using_params_hash_with_http_scheme = 0.15 s = E
+
+
+Error:
+RemoteFirefoxTest#test_using_params_hash_with_http_scheme:
+Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 contains a scheme
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:42:28.403Z'
+System info: host: '60d726f508f2', ip: '***.***.***.***', os.name: 'Linux', os.arch: 'amd64', os.version: '4.9.60-linuxkit-aufs', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+remote stacktrace: stack backtrace:
+   0:           0x4edb3c - backtrace::backtrace::trace::hc4bd56a2f176de7e
+   1:           0x4edb72 - backtrace::capture::Backtrace::new::he3b2a15d39027c46
+   2:           0x4e9586 - webdriver::error::WebDriverError::new::hee9ff9dd0a444441
+   3:           0x4ddf5a - webdriver::capabilities::SpecNewSessionParameters::validate_host::h19069b6c64b241db
+   4:           0x4dd6a6 - webdriver::capabilities::SpecNewSessionParameters::validate_proxy::h3387fbc10633c5eb
+   5:           0x436c1a - <&'a mut I as core::iter::iterator::Iterator>::next::hbb01b33ace84bf9d
+   6:           0x4414c5 - geckodriver::marionette::MarionetteHandler::create_connection::hf0532ddb9e159684
+   7:           0x428570 - <webdriver::server::Dispatcher<T, U>>::run::h2119c674d7b88193
+   8:           0x4029b9 - std::sys_common::backtrace::__rust_begin_short_backtrace::h21d98a9ff86d4c25
+   9:           0x40be65 - std::panicking::try::do_call::h5cff0c9b18cfdbba
+  10:           0x5e6a6c - panic_unwind::__rust_maybe_catch_panic
+                        at /checkout/src/libpanic_unwind/lib.rs:99
+  11:           0x41eb22 - <F as alloc::boxed::FnBox<A>>::call_box::h413eb1d9d9f1c473
+  12:           0x5df13b - alloc::boxed::{{impl}}::call_once<(),()>
+                        at /checkout/src/liballoc/boxed.rs:692
+                         - std::sys_common::thread::start_thread
+                        at /checkout/src/libstd/sys_common/thread.rs:21
+                         - std::sys::imp::thread::{{impl}}::new::thread_start
+                        at /checkout/src/libstd/sys/unix/thread.rs:84
+    [remote server] sun.reflect.NativeConstructorAccessorImpl(NativeConstructorAccessorImpl.java):-2:in `newInstance0'
+    [remote server] sun.reflect.NativeConstructorAccessorImpl(NativeConstructorAccessorImpl.java):62:in `newInstance'
+    [remote server] sun.reflect.DelegatingConstructorAccessorImpl(DelegatingConstructorAccessorImpl.java):45:in `newInstance'
+    [remote server] java.lang.reflect.Constructor(Constructor.java):423:in `newInstance'
+    [remote server] org.openqa.selenium.remote.W3CHandshakeResponse(W3CHandshakeResponse.java):57:in `lambda$new$0'
+    [remote server] org.openqa.selenium.remote.W3CHandshakeResponse(W3CHandshakeResponse.java):104:in `lambda$getResponseFunction$2'
+    [remote server] org.openqa.selenium.remote.ProtocolHandshake(ProtocolHandshake.java):123:in `lambda$createSession$0'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.Spliterators$ArraySpliterator(Spliterators.java):958:in `tryAdvance'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):126:in `forEachWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):498:in `copyIntoWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):485:in `copyInto'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):471:in `wrapAndCopyInto'
+    [remote server] java.util.stream.FindOps$FindOp(FindOps.java):152:in `evaluateSequential'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):234:in `evaluate'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):464:in `findFirst'
+    [remote server] org.openqa.selenium.remote.ProtocolHandshake(ProtocolHandshake.java):126:in `createSession'
+    [remote server] org.openqa.selenium.remote.ProtocolHandshake(ProtocolHandshake.java):73:in `createSession'
+    [remote server] org.openqa.selenium.remote.server.RemoteSession$Factory(RemoteSession.java):145:in `performHandshake'
+    [remote server] org.openqa.selenium.remote.server.ServicedSession$Factory(ServicedSession.java):154:in `apply'
+    [remote server] org.openqa.selenium.remote.server.ActiveSessionFactory(ActiveSessionFactory.java):176:in `lambda$apply$12'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$11$1(ReferencePipeline.java):373:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$2$1(ReferencePipeline.java):175:in `accept'
+    [remote server] java.util.Spliterators$ArraySpliterator(Spliterators.java):958:in `tryAdvance'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):126:in `forEachWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):498:in `copyIntoWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):485:in `copyInto'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):471:in `wrapAndCopyInto'
+    [remote server] java.util.stream.FindOps$FindOp(FindOps.java):152:in `evaluateSequential'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):234:in `evaluate'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):464:in `findFirst'
+    [remote server] org.openqa.selenium.remote.server.ActiveSessionFactory(ActiveSessionFactory.java):179:in `apply'
+    [remote server] org.openqa.selenium.remote.server.NewSessionPipeline(NewSessionPipeline.java):65:in `lambda$null$2'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$2$1(ReferencePipeline.java):175:in `accept'
+    [remote server] java.util.Collections$2(Collections.java):4717:in `tryAdvance'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):126:in `forEachWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):498:in `copyIntoWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):485:in `copyInto'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):471:in `wrapAndCopyInto'
+    [remote server] java.util.stream.FindOps$FindOp(FindOps.java):152:in `evaluateSequential'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):234:in `evaluate'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):464:in `findFirst'
+    [remote server] org.openqa.selenium.remote.server.NewSessionPipeline(NewSessionPipeline.java):68:in `lambda$createNewSession$3'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.DistinctOps$1$2(DistinctOps.java):175:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$2$1(ReferencePipeline.java):175:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$2$1(ReferencePipeline.java):175:in `accept'
+    [remote server] java.util.stream.Streams$StreamBuilderImpl(Streams.java):405:in `tryAdvance'
+    [remote server] java.util.stream.Streams$ConcatSpliterator(Streams.java):728:in `tryAdvance'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):126:in `forEachWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):498:in `copyIntoWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):485:in `copyInto'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):471:in `wrapAndCopyInto'
+    [remote server] java.util.stream.FindOps$FindOp(FindOps.java):152:in `evaluateSequential'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):234:in `evaluate'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):464:in `findFirst'
+    [remote server] org.openqa.selenium.remote.server.NewSessionPipeline(NewSessionPipeline.java):71:in `createNewSession'
+    [remote server] org.openqa.selenium.remote.server.commandhandler.BeginSession(BeginSession.java):65:in `execute'
+    [remote server] org.openqa.selenium.remote.server.WebDriverServlet(WebDriverServlet.java):242:in `lambda$handle$0'
+    [remote server] java.util.concurrent.Executors$RunnableAdapter(Executors.java):511:in `call'
+    [remote server] java.util.concurrent.FutureTask(FutureTask.java):266:in `run'
+    [remote server] java.util.concurrent.ThreadPoolExecutor(ThreadPoolExecutor.java):1149:in `runWorker'
+    [remote server] java.util.concurrent.ThreadPoolExecutor$Worker(ThreadPoolExecutor.java):624:in `run'
+    [remote server] java.lang.Thread(Thread.java):748:in `run'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `create_response'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/default.rb:104:in `request'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:164:in `execute'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:97:in `create_session'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:53:in `handshake'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/driver.rb:37:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/driver.rb:56:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/driver.rb:56:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver.rb:84:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:57:in `test_using_params_hash_with_http_scheme'
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:51
+
+RemoteFirefoxTest#test_using_proxy_object_from_uri_with_http_scheme = 0.13 s = E
+
+
+Error:
+RemoteFirefoxTest#test_using_proxy_object_from_uri_with_http_scheme:
+Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 contains a scheme
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:42:28.403Z'
+System info: host: '60d726f508f2', ip: '***.***.***.***', os.name: 'Linux', os.arch: 'amd64', os.version: '4.9.60-linuxkit-aufs', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+remote stacktrace: stack backtrace:
+   0:           0x4edb3c - backtrace::backtrace::trace::hc4bd56a2f176de7e
+   1:           0x4edb72 - backtrace::capture::Backtrace::new::he3b2a15d39027c46
+   2:           0x4e9586 - webdriver::error::WebDriverError::new::hee9ff9dd0a444441
+   3:           0x4ddf5a - webdriver::capabilities::SpecNewSessionParameters::validate_host::h19069b6c64b241db
+   4:           0x4dd6a6 - webdriver::capabilities::SpecNewSessionParameters::validate_proxy::h3387fbc10633c5eb
+   5:           0x436c1a - <&'a mut I as core::iter::iterator::Iterator>::next::hbb01b33ace84bf9d
+   6:           0x4414c5 - geckodriver::marionette::MarionetteHandler::create_connection::hf0532ddb9e159684
+   7:           0x428570 - <webdriver::server::Dispatcher<T, U>>::run::h2119c674d7b88193
+   8:           0x4029b9 - std::sys_common::backtrace::__rust_begin_short_backtrace::h21d98a9ff86d4c25
+   9:           0x40be65 - std::panicking::try::do_call::h5cff0c9b18cfdbba
+  10:           0x5e6a6c - panic_unwind::__rust_maybe_catch_panic
+                        at /checkout/src/libpanic_unwind/lib.rs:99
+  11:           0x41eb22 - <F as alloc::boxed::FnBox<A>>::call_box::h413eb1d9d9f1c473
+  12:           0x5df13b - alloc::boxed::{{impl}}::call_once<(),()>
+                        at /checkout/src/liballoc/boxed.rs:692
+                         - std::sys_common::thread::start_thread
+                        at /checkout/src/libstd/sys_common/thread.rs:21
+                         - std::sys::imp::thread::{{impl}}::new::thread_start
+                        at /checkout/src/libstd/sys/unix/thread.rs:84
+    [remote server] sun.reflect.NativeConstructorAccessorImpl(NativeConstructorAccessorImpl.java):-2:in `newInstance0'
+    [remote server] sun.reflect.NativeConstructorAccessorImpl(NativeConstructorAccessorImpl.java):62:in `newInstance'
+    [remote server] sun.reflect.DelegatingConstructorAccessorImpl(DelegatingConstructorAccessorImpl.java):45:in `newInstance'
+    [remote server] java.lang.reflect.Constructor(Constructor.java):423:in `newInstance'
+    [remote server] org.openqa.selenium.remote.W3CHandshakeResponse(W3CHandshakeResponse.java):57:in `lambda$new$0'
+    [remote server] org.openqa.selenium.remote.W3CHandshakeResponse(W3CHandshakeResponse.java):104:in `lambda$getResponseFunction$2'
+    [remote server] org.openqa.selenium.remote.ProtocolHandshake(ProtocolHandshake.java):123:in `lambda$createSession$0'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.Spliterators$ArraySpliterator(Spliterators.java):958:in `tryAdvance'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):126:in `forEachWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):498:in `copyIntoWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):485:in `copyInto'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):471:in `wrapAndCopyInto'
+    [remote server] java.util.stream.FindOps$FindOp(FindOps.java):152:in `evaluateSequential'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):234:in `evaluate'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):464:in `findFirst'
+    [remote server] org.openqa.selenium.remote.ProtocolHandshake(ProtocolHandshake.java):126:in `createSession'
+    [remote server] org.openqa.selenium.remote.ProtocolHandshake(ProtocolHandshake.java):73:in `createSession'
+    [remote server] org.openqa.selenium.remote.server.RemoteSession$Factory(RemoteSession.java):145:in `performHandshake'
+    [remote server] org.openqa.selenium.remote.server.ServicedSession$Factory(ServicedSession.java):154:in `apply'
+    [remote server] org.openqa.selenium.remote.server.ActiveSessionFactory(ActiveSessionFactory.java):176:in `lambda$apply$12'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$11$1(ReferencePipeline.java):373:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$2$1(ReferencePipeline.java):175:in `accept'
+    [remote server] java.util.Spliterators$ArraySpliterator(Spliterators.java):958:in `tryAdvance'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):126:in `forEachWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):498:in `copyIntoWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):485:in `copyInto'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):471:in `wrapAndCopyInto'
+    [remote server] java.util.stream.FindOps$FindOp(FindOps.java):152:in `evaluateSequential'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):234:in `evaluate'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):464:in `findFirst'
+    [remote server] org.openqa.selenium.remote.server.ActiveSessionFactory(ActiveSessionFactory.java):179:in `apply'
+    [remote server] org.openqa.selenium.remote.server.NewSessionPipeline(NewSessionPipeline.java):65:in `lambda$null$2'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$2$1(ReferencePipeline.java):175:in `accept'
+    [remote server] java.util.Collections$2(Collections.java):4717:in `tryAdvance'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):126:in `forEachWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):498:in `copyIntoWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):485:in `copyInto'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):471:in `wrapAndCopyInto'
+    [remote server] java.util.stream.FindOps$FindOp(FindOps.java):152:in `evaluateSequential'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):234:in `evaluate'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):464:in `findFirst'
+    [remote server] org.openqa.selenium.remote.server.NewSessionPipeline(NewSessionPipeline.java):68:in `lambda$createNewSession$3'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.DistinctOps$1$2(DistinctOps.java):175:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$2$1(ReferencePipeline.java):175:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$2$1(ReferencePipeline.java):175:in `accept'
+    [remote server] java.util.stream.Streams$StreamBuilderImpl(Streams.java):405:in `tryAdvance'
+    [remote server] java.util.stream.Streams$ConcatSpliterator(Streams.java):728:in `tryAdvance'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):126:in `forEachWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):498:in `copyIntoWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):485:in `copyInto'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):471:in `wrapAndCopyInto'
+    [remote server] java.util.stream.FindOps$FindOp(FindOps.java):152:in `evaluateSequential'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):234:in `evaluate'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):464:in `findFirst'
+    [remote server] org.openqa.selenium.remote.server.NewSessionPipeline(NewSessionPipeline.java):71:in `createNewSession'
+    [remote server] org.openqa.selenium.remote.server.commandhandler.BeginSession(BeginSession.java):65:in `execute'
+    [remote server] org.openqa.selenium.remote.server.WebDriverServlet(WebDriverServlet.java):242:in `lambda$handle$0'
+    [remote server] java.util.concurrent.Executors$RunnableAdapter(Executors.java):511:in `call'
+    [remote server] java.util.concurrent.FutureTask(FutureTask.java):266:in `run'
+    [remote server] java.util.concurrent.ThreadPoolExecutor(ThreadPoolExecutor.java):1149:in `runWorker'
+    [remote server] java.util.concurrent.ThreadPoolExecutor$Worker(ThreadPoolExecutor.java):624:in `run'
+    [remote server] java.lang.Thread(Thread.java):748:in `run'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `create_response'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/default.rb:104:in `request'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:164:in `execute'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:97:in `create_session'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:53:in `handshake'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/driver.rb:37:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/driver.rb:56:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/driver.rb:56:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver.rb:84:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:85:in `test_using_proxy_object_from_uri_with_http_scheme'
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:79
+
+RemoteFirefoxTest#test_using_proxy_params_hash = 3.78 s = .
+RemoteFirefoxTest#test_using_switches_argument = 2.34 s = F
+
+
+Failure:
+RemoteFirefoxTest#test_using_switches_argument [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:108
+
+RemoteFirefoxTest#test_using_proxy_object_from_uri_without_http_scheme = 0.12 s = E
+
+
+Error:
+RemoteFirefoxTest#test_using_proxy_object_from_uri_without_http_scheme:
+Selenium::WebDriver::Error::InvalidArgumentError: http://***.***.***.***:8080 contains a scheme
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:42:28.403Z'
+System info: host: '60d726f508f2', ip: '***.***.***.***', os.name: 'Linux', os.arch: 'amd64', os.version: '4.9.60-linuxkit-aufs', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+remote stacktrace: stack backtrace:
+   0:           0x4edb3c - backtrace::backtrace::trace::hc4bd56a2f176de7e
+   1:           0x4edb72 - backtrace::capture::Backtrace::new::he3b2a15d39027c46
+   2:           0x4e9586 - webdriver::error::WebDriverError::new::hee9ff9dd0a444441
+   3:           0x4ddf5a - webdriver::capabilities::SpecNewSessionParameters::validate_host::h19069b6c64b241db
+   4:           0x4dd6a6 - webdriver::capabilities::SpecNewSessionParameters::validate_proxy::h3387fbc10633c5eb
+   5:           0x436c1a - <&'a mut I as core::iter::iterator::Iterator>::next::hbb01b33ace84bf9d
+   6:           0x4414c5 - geckodriver::marionette::MarionetteHandler::create_connection::hf0532ddb9e159684
+   7:           0x428570 - <webdriver::server::Dispatcher<T, U>>::run::h2119c674d7b88193
+   8:           0x4029b9 - std::sys_common::backtrace::__rust_begin_short_backtrace::h21d98a9ff86d4c25
+   9:           0x40be65 - std::panicking::try::do_call::h5cff0c9b18cfdbba
+  10:           0x5e6a6c - panic_unwind::__rust_maybe_catch_panic
+                        at /checkout/src/libpanic_unwind/lib.rs:99
+  11:           0x41eb22 - <F as alloc::boxed::FnBox<A>>::call_box::h413eb1d9d9f1c473
+  12:           0x5df13b - alloc::boxed::{{impl}}::call_once<(),()>
+                        at /checkout/src/liballoc/boxed.rs:692
+                         - std::sys_common::thread::start_thread
+                        at /checkout/src/libstd/sys_common/thread.rs:21
+                         - std::sys::imp::thread::{{impl}}::new::thread_start
+                        at /checkout/src/libstd/sys/unix/thread.rs:84
+    [remote server] sun.reflect.NativeConstructorAccessorImpl(NativeConstructorAccessorImpl.java):-2:in `newInstance0'
+    [remote server] sun.reflect.NativeConstructorAccessorImpl(NativeConstructorAccessorImpl.java):62:in `newInstance'
+    [remote server] sun.reflect.DelegatingConstructorAccessorImpl(DelegatingConstructorAccessorImpl.java):45:in `newInstance'
+    [remote server] java.lang.reflect.Constructor(Constructor.java):423:in `newInstance'
+    [remote server] org.openqa.selenium.remote.W3CHandshakeResponse(W3CHandshakeResponse.java):57:in `lambda$new$0'
+    [remote server] org.openqa.selenium.remote.W3CHandshakeResponse(W3CHandshakeResponse.java):104:in `lambda$getResponseFunction$2'
+    [remote server] org.openqa.selenium.remote.ProtocolHandshake(ProtocolHandshake.java):123:in `lambda$createSession$0'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.Spliterators$ArraySpliterator(Spliterators.java):958:in `tryAdvance'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):126:in `forEachWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):498:in `copyIntoWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):485:in `copyInto'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):471:in `wrapAndCopyInto'
+    [remote server] java.util.stream.FindOps$FindOp(FindOps.java):152:in `evaluateSequential'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):234:in `evaluate'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):464:in `findFirst'
+    [remote server] org.openqa.selenium.remote.ProtocolHandshake(ProtocolHandshake.java):126:in `createSession'
+    [remote server] org.openqa.selenium.remote.ProtocolHandshake(ProtocolHandshake.java):73:in `createSession'
+    [remote server] org.openqa.selenium.remote.server.RemoteSession$Factory(RemoteSession.java):145:in `performHandshake'
+    [remote server] org.openqa.selenium.remote.server.ServicedSession$Factory(ServicedSession.java):154:in `apply'
+    [remote server] org.openqa.selenium.remote.server.ActiveSessionFactory(ActiveSessionFactory.java):176:in `lambda$apply$12'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$11$1(ReferencePipeline.java):373:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$2$1(ReferencePipeline.java):175:in `accept'
+    [remote server] java.util.Spliterators$ArraySpliterator(Spliterators.java):958:in `tryAdvance'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):126:in `forEachWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):498:in `copyIntoWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):485:in `copyInto'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):471:in `wrapAndCopyInto'
+    [remote server] java.util.stream.FindOps$FindOp(FindOps.java):152:in `evaluateSequential'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):234:in `evaluate'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):464:in `findFirst'
+    [remote server] org.openqa.selenium.remote.server.ActiveSessionFactory(ActiveSessionFactory.java):179:in `apply'
+    [remote server] org.openqa.selenium.remote.server.NewSessionPipeline(NewSessionPipeline.java):65:in `lambda$null$2'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$2$1(ReferencePipeline.java):175:in `accept'
+    [remote server] java.util.Collections$2(Collections.java):4717:in `tryAdvance'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):126:in `forEachWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):498:in `copyIntoWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):485:in `copyInto'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):471:in `wrapAndCopyInto'
+    [remote server] java.util.stream.FindOps$FindOp(FindOps.java):152:in `evaluateSequential'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):234:in `evaluate'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):464:in `findFirst'
+    [remote server] org.openqa.selenium.remote.server.NewSessionPipeline(NewSessionPipeline.java):68:in `lambda$createNewSession$3'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.DistinctOps$1$2(DistinctOps.java):175:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$2$1(ReferencePipeline.java):175:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$3$1(ReferencePipeline.java):193:in `accept'
+    [remote server] java.util.stream.ReferencePipeline$2$1(ReferencePipeline.java):175:in `accept'
+    [remote server] java.util.stream.Streams$StreamBuilderImpl(Streams.java):405:in `tryAdvance'
+    [remote server] java.util.stream.Streams$ConcatSpliterator(Streams.java):728:in `tryAdvance'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):126:in `forEachWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):498:in `copyIntoWithCancel'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):485:in `copyInto'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):471:in `wrapAndCopyInto'
+    [remote server] java.util.stream.FindOps$FindOp(FindOps.java):152:in `evaluateSequential'
+    [remote server] java.util.stream.AbstractPipeline(AbstractPipeline.java):234:in `evaluate'
+    [remote server] java.util.stream.ReferencePipeline(ReferencePipeline.java):464:in `findFirst'
+    [remote server] org.openqa.selenium.remote.server.NewSessionPipeline(NewSessionPipeline.java):71:in `createNewSession'
+    [remote server] org.openqa.selenium.remote.server.commandhandler.BeginSession(BeginSession.java):65:in `execute'
+    [remote server] org.openqa.selenium.remote.server.WebDriverServlet(WebDriverServlet.java):242:in `lambda$handle$0'
+    [remote server] java.util.concurrent.Executors$RunnableAdapter(Executors.java):511:in `call'
+    [remote server] java.util.concurrent.FutureTask(FutureTask.java):266:in `run'
+    [remote server] java.util.concurrent.ThreadPoolExecutor(ThreadPoolExecutor.java):1149:in `runWorker'
+    [remote server] java.util.concurrent.ThreadPoolExecutor$Worker(ThreadPoolExecutor.java):624:in `run'
+    [remote server] java.lang.Thread(Thread.java):748:in `run'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:69:in `assert_ok'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/response.rb:32:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:81:in `create_response'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/default.rb:104:in `request'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/http/common.rb:59:in `call'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:164:in `execute'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:97:in `create_session'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/bridge.rb:53:in `handshake'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/remote/driver.rb:37:in `initialize'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/driver.rb:56:in `new'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver/common/driver.rb:56:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/selenium-webdriver-3.9.0/lib/selenium/webdriver.rb:84:in `for'
+    C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/watir-6.10.3/lib/watir/browser.rb:48:in `initialize'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `new'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:24:in `run_test_with'
+    C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:100:in `test_using_proxy_object_from_uri_without_http_scheme'
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:94
+
+RemoteFirefoxTest#test_using_switches_argument_with_http_scheme = 2.34 s = F
+
+
+Failure:
+RemoteFirefoxTest#test_using_switches_argument_with_http_scheme [C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:25]:
+Proxy did not change for HTTP connection
+
+bin/rails test C:/Users/tim/dev/rb/watir_proxy_test/test/interesting_tests.rb:117
+
+RemoteFirefoxTest#test_using_proxy_object = 4.62 s = .
+
+Finished in 67.760699s, 0.4132 runs/s, 0.5608 assertions/s.
+
+28 runs, 38 assertions, 6 failures, 6 errors, 0 skips

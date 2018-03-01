@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  selenium_chrome:
+    image: 'selenium/standalone-chrome'
+    ports:
+      - '4444:4444'
+  selenium_firefox:
+    image: 'selenium/standalone-firefox'
+    ports:
+      - '5555:4444'
