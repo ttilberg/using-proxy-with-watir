@@ -14,8 +14,8 @@ Based on the experience above, I'm certain this is not accurate across all versi
 require 'watir'
 
 proxy_object = Selenium::WebDriver::Proxy.new(
-  http: ENV.fetch('PROXY_HOST')
-  ssl:  ENV.fetch('PROXY_PORT')
+  http: '127.0.0.1:8080',
+  ssl:  '127.0.0.1:8080'
 )
 
 browser = Watir::Browser.new :chrome, proxy: proxy_object
@@ -27,15 +27,15 @@ Under the hood, this eventually creates a `Selenium::WebDriver::Remote::Capabili
 require 'watir'
 
 proxy_hash = {
-  http: ENV.fetch('PROXY_HOST')
-  ssl:  ENV.fetch('PROXY_PORT')
+  http: '127.0.0.1:8080',
+  ssl:  '127.0.0.1:8080'
 }
 browser = Watir::Browser.new :chrome, proxy: proxy_hash
 ```
 
 This method is compatible with `:chrome`, `:firefox`, and remote versions using `url: URL` when setting up a `Watir::Browser`.
 
-### Some interesting things regarding my interesting_tests:
+### Some interesting things regarding my `interesting_tests`:
 
 ##### Leave `http://` at home:
 
