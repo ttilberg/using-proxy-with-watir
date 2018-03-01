@@ -21,7 +21,7 @@ proxy_object = Selenium::WebDriver::Proxy.new(
 browser = Watir::Browser.new :chrome, proxy: proxy_object
 ```
 
-Under the hood, this is creating a `Selenium::WebDriver::Capabilites` object with a `proxy` attribute. The `Capabilities#proxy=` method is able to discern whether it was passed an existing `Proxy` object, or just the hash needed to create one:
+Under the hood, this seems to be creating a `Selenium::WebDriver::Remote::Capabilites` object with a `proxy` attribute. The `Capabilities#proxy=` method is able to discern whether it was passed an existing `Proxy` object, or just the hash needed to create one:
 
 ```ruby
 require 'watir'
