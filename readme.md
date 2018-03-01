@@ -37,7 +37,7 @@ This method is compatible with `:chrome`, `:firefox`, and remote versions using 
 
 Unfortunately, I don't know how to get a proxy working with Edge. None of the example test variations have worked.
 
-# Some interesting things regarding my `interesting_tests`:
+## Some `interesting things` regarding my `interesting_tests`:
 
 #### Leave `http://` at home:
 
@@ -47,7 +47,7 @@ Unfortunately many tools have different expectations of whether your proxy strin
 
 I thought perhaps if I used a URI instead of a string, there would be a better chance for the Firefox tests to pass when using a proxy string with scheme. Nope. No dice.
 
-#### Don't both with `switches: [--proxy-server]`
+#### Don't bother with `switches: [--proxy-server]`
 
 There are many examples and documentation for using a proxy with Chrome via the `--proxy-server=` command line argument. If you pass this in when executing chrome, it overrides the system proxy. Avoid this method if you can: It doesn't seem to work when running remotely -- only natively. And it's specific to Chrome. And the generic, abstracted way works these days --- so why wouldn't you just use that?
 
@@ -83,7 +83,7 @@ Bash:
 λ PROXY_HOST=127.0.0.1 PROXY_PORT:8080 ruby test.rb
 ```
 
-Windows (Sorry, I don't know how to inline these `:(`):
+Windows: (Sorry, I don't know how to inline these `:(`)
 ```
 λ set PROXY_HOST=127.0.0.1
 λ set PROXY_PORT=8080
