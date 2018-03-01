@@ -94,10 +94,8 @@ Windows: (Sorry, I don't know how to inline these `:(`)
 ### ???
 
 The test runs against the following browser configurations:
-  - local, native Chrome
-  - local, native Firefox
-  - remote Chrome
-  - remote Firefox
+  - local, native Chrome, Firefox, and Edge
+  - remote Chrome and Firefox
 
 To add more, just create more test classes using the existing ones as templates.
 
